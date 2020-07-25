@@ -1,15 +1,11 @@
 import argparse
 import pandas as pd
 import numpy as np
-from sklearn.preprocessing import StandardScaler
-from sklearn import preprocessing
 from sklearn.ensemble import RandomForestClassifier
 from sklearn import tree
 from sklearn.tree import DecisionTreeClassifier
 from sklearn import svm
-from sklearn.metrics import classification_report, confusion_matrix, accuracy_score
-from sklearn.linear_model import LogisticRegression
-import pickle
+from sklearn.metrics import accuracy_score
 
 parser = argparse.ArgumentParser(description = "Random Forest Learner Generator")
 parser.add_argument('maxsamples', help="Maximum number of test samples")
